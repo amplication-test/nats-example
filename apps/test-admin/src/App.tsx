@@ -13,6 +13,10 @@ import { OrderList } from "./order/OrderList";
 import { OrderCreate } from "./order/OrderCreate";
 import { OrderEdit } from "./order/OrderEdit";
 import { OrderShow } from "./order/OrderShow";
+import { OfekList } from "./ofek/OfekList";
+import { OfekCreate } from "./ofek/OfekCreate";
+import { OfekEdit } from "./ofek/OfekEdit";
+import { OfekShow } from "./ofek/OfekShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -52,6 +56,13 @@ const App = (): React.ReactElement => {
           edit={OrderEdit}
           create={OrderCreate}
           show={OrderShow}
+        />
+        <Resource
+          name="Ofek"
+          list={OfekList}
+          edit={OfekEdit}
+          create={OfekCreate}
+          show={OfekShow}
         />
       </Admin>
     </div>
